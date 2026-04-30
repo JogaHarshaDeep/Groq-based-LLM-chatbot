@@ -1,0 +1,14 @@
+langchain==0.2.12
+langchain-community==0.2.10
+langchain-core==0.2.43
+langchain-text-splitters==0.2.4
+
+huggingface_hub==0.23.0
+transformers==4.41.2
+sentence-transformers==2.2.2
+
+pydantic==1.10.13
+
+faiss-cpu==1.7.4
+streamlit==1.32.0
+PyPDF2==3.0.1
