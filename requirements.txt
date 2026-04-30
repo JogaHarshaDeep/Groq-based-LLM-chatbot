@@ -6,8 +6,7 @@ langchain-text-splitters==0.2.4
 huggingface_hub==0.23.0
 transformers==4.41.2
 sentence-transformers==2.2.2
-
-pydantic==1.10.13
+pydantic>=2.7.0
 
 faiss-cpu
 streamlit==1.32.0
