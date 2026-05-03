@@ -5,7 +5,7 @@ import streamlit as st
 from PyPDF2 import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
@@ -46,7 +46,7 @@ if file is not None:
     )
 
     # Vector DB
-    vector_store = Chroma.from_texts(chunks, embeddings)
+    vector_store = FAISS.from_texts(chunks, embeddings)
 
     # User input
     user_question = st.text_input("Type your question here")
